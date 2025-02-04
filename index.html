@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WebXR AR Product Visualization Test</title>
+    <!-- Make the page responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Include Three.js -->
+    <script type="module">
+        import three from 'https://cdn.jsdelivr.net/npm/three@0.173.0/+esm'
+        </script>
+    <!-- Include the GLTF Loader (if you need to load a .glb or .gltf model) -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.173.0/examples/js/loaders/GLTFLoader.js"></script>
+    <!-- Include the ARButton script -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.173.0/examples/jsm/webxr/ARButton.js" type="module"></script>
+  </head>
+  <body style="margin:0; padding:0;">
+    <h1 style="text-align:center;">WebXR AR Product Visualization</h1>
+
+    <!-- Container for the AR button -->
+    <div id="ar-button-container" style="text-align:center;"></div>
+    
+    <!-- Script with our application logic -->
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
