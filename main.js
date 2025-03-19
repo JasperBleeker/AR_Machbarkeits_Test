@@ -77,7 +77,7 @@ function onSelect() {
 
 function placeObject(matrix) {
   if (!productModel) {
-    loader.load('models/product.glb', (gltf) => {
+    loader.load('models/ChairExport.glb', (gltf) => {
       productModel = gltf.scene;
       productModel.scale.set(0.2, 0.2, 0.2);
       setMatrixAndAdd(productModel, matrix);
